@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Galion</title>
+</head>
+<body>
+    <header>
+            <h1>Intégration Galion: Liste Dossier 1</h1>
+            <br>
+    </header>
+    <main>
+        <div class="menuTop">
+            <div class="logo_MenuTop_Cont">
+                <img class="galionIcon" src="./assets/logos/burger.png" alt="galionIcon">
+                <img src="./assets/logos/Logo_bleu_maxi.png" alt="galionLogo">
+            </div>
+            <div class="sectionsTextMenu">
+                <a class="ahref_noStyle_White" href=""><h5>MES CHIFFRES</h5></a>
+                <a class="ahref_noStyle_White" href=""><h5>MES LOTS</h5></a>
+                <a class="ahref_noStyle_White" href=""><h5 >MES DOCUMENTS</h5></a>
+                <a class="ahref_noStyle_White" href=""><h5 class="active_Tab">MES DOSSIERS</h5></a>
+                <a class="ahref_noStyle_White" href=""><h5>F.A.Q</h5></a>
+            </div>
+            <div class="identifiants">
+                <img src="./assets/userIcon/Union.png" alt="userIcon">
+                <h5>raison sociale</h5>
+            </div>
+        </div>
+        <div class="retour">
+            <img class="arrowRtrn" src="./assets/icons/fleche.png" alt="fleche">
+            <h3>Retour</h3>
+        </div>
+        <div class="title_Search_Submit">
+            <div class="title flex_AlignCtr flex1">
+                <img class="titleIcon" src="./assets/userIcon/UnionGreen.png" alt="userIcon">
+                <h2 class="titleText">MES DOSSIERS LOCATAIRES</h2>
+            </div>
+            <div class="searchCont flex_CtrCtr flex1">
+                <input type="search" class="searchInput" placeholder="ex: adresse du bien, nom locataire">
+                <img src="./assets/icons/searchIcon.png" alt="" class="searchIcon">
+            </div>
+            
+            <button class="submit flex1">
+                <a class="ahref_noStyle_White" href="./pagecontrat_1.html">
+                    <h4>Soumettre un dossier</h4>
+                </a>
+            </button>
+        </div>
+        <div class="frame4Container flex_CtrCtr">
+            <div class="container">
+                <div class="status flex_AlignCtr">
+                    <div class="activeStatuts flex_CtrCtr">TOUS</div>
+                    <div class="flex_CtrCtr">EN COURS</div>
+                    <div class="flex_CtrCtr">
+                        <!-- <div class="paddingBulle"></div> -->
+                        VALIDÉ&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class=" flex_CtrCtr"><div>3</div></div>
+                    </div>
+                    <div class="flex_CtrCtr">REFUSÉ</div>
+                    <div class="flex_CtrCtr">SANS SUITE</div>
+                    <div class="flex_CtrCtr">EN ATTENTE&nbsp;&nbsp;&nbsp;&nbsp;<div><span>5</span></div>
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <div class="flex_CtrCtr">
+                                    <div class="flex_CtrCtr stateFolderTitle">
+                                        <img class="arrowUp" src="./assets/icons/arrowUp.png" alt="arrow up">
+                                        <h3>État du dossier</h3>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <!-- <h3>Icon</h3> -->
+                            </th>
+                            <th scope="col" class="name">
+                                <h3>Nom(s) candidats(s)</h3>
+                            </th>
+                            <th scope="col">
+                                <h3>Adresse</h3>
+                            </th>
+                            <th scope="col">
+                                <h3>État du dossier</h3>
+                            </th>
+                            <th scope="col">
+                                <h3>Type de bien</h3>
+                            </th>
+                            <th scope="col">
+                                <div class="flex_CtrCtr">
+                                    <div class="flex_CtrCtr stateFolder">
+                                        <img class="arrowUp" src="./assets/icons/arrowUp.png" alt="arrow up">
+                                        <h3>Mise à jour</h3>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <!-- <h3>Icon</h3> -->
+                            </th>
+                            <th scope="col">
+                                <!-- <h3>Icon</h3> -->
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="td_height60">
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="noFollowUp flex_CtrCtr">Sans suite</h3>
+                                </div>
+                            </th>
+                            <td></td>
+                            <td class="name">
+                                <h3>Luc IBRUN, Thibault JEAN...(4)</h3>
+                            </td>
+                            <td class="address td_height60 ">
+                                <div>
+                                    <h3>Résidence du Verger</h3>
+                                    <h3>16 rue friant, Paris, 75014</h3>
+                                </div>
+                            </td>
+                            <td><img src="./assets/icons/buidingIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <h3>27 Avr</h3>
+                            </td>
+                            <td class="td_height60 flex_CtrCtr">
+                                <button class="dwnload flex_CtrCtr">
+                                    Télécharger l'agrément
+                                </button>
+                            </td>
+                            <td><img class="fileAttached" src="./assets/icons/pieceJointe.png" alt="piece Jointe"></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="running flex_CtrCtr">En Cours</h3>
+                                </div>
+                            </th>
+                            <td></td>
+                            <td class="name">
+                                <h3>M.Randrianampoinimeria</h3>
+                            </td>
+                            <td class="address flex_CtrCtr">
+                                <div>
+                                    <h3>16 rue friant, Paris, 75014</h3>
+                                    <h3>Appartement 123</h3>
+                                </div>
+                            </td>
+                            <td><img src="./assets/icons/buidingIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <h3>27 Avr</h3>
+                            </td>
+                            <td>
+                                <!-- <h3>Marquer sans suite</h3> -->
+                            </td>
+                            <td ></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="flex_CtrCtr"> 
+                                    <h3 class="checked flex_CtrCtr">Validé</h3>
+                                </div>
+                            </th>
+                            <td>
+                                <div class="backgroundCrossRed flex_CtrCtr">
+                                    <div>
+                                        <img id="noGaranty_Img" class="garantyState" src="./assets/icons/noGaranty.png" alt="pas de garantie">
+                                    </div>
+                                    <div id="redcrossId" class="cross_Refused flex_CtrCtr">
+                                        <!-- <img src="./assets/icons/cross_White.png" alt="croix"> -->
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td class="name">
+                                <h3>Luic IBRUM</h3>
+                            </td>
+                            <td class="address flex_CtrCtr">
+                                <div>
+                                    <h3>16 rue friant, Paris, 75014</h3>
+                                </div>
+                            </td>
+                            <td><img src="./assets/icons/buidingIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <h3>27 Avr</h3>
+                            </td>
+                            <td class="td_height60 flex_CtrCtr">
+                                <button class="dwnload flex_CtrCtr">
+                                    Télécharger l'agrément
+                                </button>
+                            </td>
+                            <td><img class="fileAttached" src="./assets/icons/pieceJointe.png" alt="piece Jointe"></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="checked flex_CtrCtr">Validé</h3>
+                                </div>
+                            </th>
+                            <td>
+                                <div class="backgroundCrossGreen flex_CtrCtr">
+                                    <div>
+                                        <img id="underGaranty" class="garantyState" src="./assets/icons/underGaranty.png" alt="sous garantie">
+                                    </div>
+                                    <div class="cross_Checked flex_CtrCtr">
+                                        <!-- <img src="./assets/icons/checked.png" alt="checked Icon"> -->
+                                    </div>
+                                    
+                                </div>
+                            </td>
+                            <td class="name">
+                                <h3>Luic IBRUM</h3>
+                            </td>
+                            <td class="address flex_CtrCtr">
+                               <div>
+                                    <h3>16 rue friant, Paris, 75014</h3>
+                               </div>
+                            </td>
+                            <td><img src="./assets/icons/buidingIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <h3>27 Avr</h3>
+                            </td>
+                            <td class="td_height60 flex_CtrCtr">
+                                <button class="dwnload flex_CtrCtr">
+                                    Télécharger l'agrément
+                                </button>
+                            </td>
+                            <td><img class="fileAttached" src="./assets/icons/pieceJointe.png" alt="piece Jointe"></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="checked flex_CtrCtr">Validé</h3>
+                                </div>
+                            </th>
+                            <td>
+                                <div class="backgroundHourglassOrange flex_CtrCtr">
+                                    <div>
+                                        <img id="waiting4Garanty" class="garantyState" src="./assets/icons/waiting4Garanty.png" alt="en attente de garantie">
+                                    </div>
+                                    <div class="cross_Hourglass flex_CtrCtr">
+                                        <!-- <img src="./assets/icons/hourglass.png" alt="checked Icon"> -->
+                                    </div>
+                            
+                                </div>
+                            </td>
+                            <td class="name">
+                                <h3>Luic IBRUM</h3>
+                            </td>
+                            <td class="address flex_CtrCtr">
+                                <div>
+                                    <h3>16 rue friant, Paris, 75014</h3>
+                                </div>
+                            </td>
+                            <td><img src="./assets/icons/buidingIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <h3>27 Avr</h3>
+                            </td>
+                            <td class="td_height60 flex_CtrCtr">
+                                <button class="dwnload_Agreement flex_CtrCtr">
+                                    Télécharger l’accord préalable
+                                </button>
+                            </td>
+                            <td><img class="fileAttached" src="./assets/icons/pieceJointe.png" alt="piece Jointe"></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="checked flex_CtrCtr">Validé</h3>
+                                </div>
+                            </th>
+                            <td>
+                                <div class="backgroundCrossRed flex_CtrCtr">
+                                    <div>
+                                        <img  class="garantyState" src="./assets/icons/noGaranty.png" alt="pas de garantie">
+                                    </div>
+                                    <div  class="cross_Refused flex_CtrCtr">
+                                        <!-- <img src="./assets/icons/cross_White.png" alt="croix"> -->
+                                    </div>
+                                </div>
+                            
+                            </td>
+                            <td class="name">
+                                <h3>Luic IBRUN</h3>
+                            </td>
+                            <td class="address flex_CtrCtr">
+                                <div>
+                                    <h3>16 rue friant, Paris, 75014</h3>
+                                </div>
+                            </td>
+                            <td><img src="./assets/icons/buidingIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <h3>27 Avr</h3>
+                            </td>
+                            <td class="td_height60 flex_CtrCtr">
+                                <button class="dwnload flex_CtrCtr">
+                                    Télécharger l'agrément
+                                </button>
+                            </td>
+                            <td><img class="fileAttached" src="./assets/icons/pieceJointe.png" alt="piece Jointe"></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="refused flex_CtrCtr">Refusé</h3>
+                                </div>
+                            </th>
+                            <td></td>
+                            <td class="name">
+                                <h3>Thibault JEAN</h3>
+                            </td>
+                            <td class="address flex_CtrCtr">
+                                <div>
+                                    <h3>16 rue friant, Paris, 75014</h3>
+                                </div>
+                            </td>
+                            <td><img src="./assets/icons/houseIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <h3>27 Avr</h3>
+                            </td>
+                            <td class="td_height60">
+                                <!-- <h3>Télécharger l'agrément</h3> -->
+                            </td>
+                            <td></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                        </tr>
+                        <tr class="incomplete_BckGrnd">
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="incomplete flex_CtrCtr">Incomplet</h3>
+                                </div>
+                            </th>
+                            <td></td>
+                            <td class="name">
+                                <h3>Lou Ravion</h3>
+                            </td>
+                            <td class="address flex_CtrCtr">
+                                <div>
+                                    <h3>16 rue friant, Paris, 75014</h3>
+                                </div>
+                            </td>
+                            <td><img src="./assets/icons/houseIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <h3>27 Avr</h3>
+                            </td>
+                            <td class="td_height60 flex_CtrCtr">
+                                <button class="askAgain flex_CtrCtr">
+                                    <!-- Relancer -->
+                                    <!-- <h3 class="askAgain flex_CtrCtr">Relancer</h3> -->
+                                </button>
+                            </td>
+                            <td></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="refused flex_CtrCtr">Refusé</h3>
+                                </div>
+                            </th>
+                            <td></td>
+                            <td class="name">
+                                <h3>Thibault JEAN</h3>
+                            </td>
+                            <td class="address flex_CtrCtr">
+                                <div>
+                                    <h3>16 rue friant, Paris, 75014</h3>
+                                </div>
+                            </td>
+                            <td><img src="./assets/icons/houseIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <h3>27 Avr</h3>
+                            </td>
+                            <td class="td_height60">
+                                <!-- <h3>Télécharger l'agrément</h3> -->
+                            </td>
+                            <td></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="refused flex_CtrCtr">Refusé</h3>
+                                </div>
+                            </th>
+                            <td></td>
+                            <td class="name">
+                                <h3>Thibault JEAN</h3>
+                            </td>
+                            <td class="address flex_CtrCtr">
+                                <div>
+                                    <h3>16 rue friant, Paris, 75014</h3>
+                                </div>
+                            </td>
+                            <td><img src="./assets/icons/houseIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <h3>27 Avr</h3>
+                            </td>
+                            <td class="td_height60">
+                                <!-- <h3>Télécharger l'agrément</h3> -->
+                            </td>
+                            <td></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="flex_CtrCtr">
+                        <tr class="flex_CtrCtr"> 
+                            <!-- <th scope="row" colspan="1" class="flex_CtrCtr">footer</th> -->
+                            <td scope="row"  colspan="8">
+                                <div class="footer_Container flex_CtrCtr">
+                                    <div class="leftSide_PageInfo flex_CtrCtr">
+                                        <h5>afficher</h5>
+                                        <div class="amountOfResults_arrowDown">
+                                            <!-- <div class="amountOfResults">10</div>
+                                            <img class="arrowDown" src="./assets/icons/arrowDown.png" alt=""> -->
+                                            <label for="amountOfResults"></label>
+                                            
+                                            <input type="number" id="amountOfResults" name="tableResult_Amount" min="1" max="10">
+                                        </div>
+                                        <h5>résultats par page</h5>
+                                    </div>
+                                    <div class="rightSide_PageInfo flex_CtrCtr">
+                                        
+                                        <div class="numbers">
+                                            <nav aria-label="pagination" class="flex_CtrCtr">
+                                                <ul class="pagination flex_CtrCtr">
+                                                    <li><a href=""><span aria-hidden="true"><img src="./assets/icons/chevronLeft.png" alt="chevronLeft" class="chevronLeft"></span><span class="visuallyhidden">previous set of pages</span></a>
+                                                    </li>
+                                                    <li class="li_pagination_Active"><a  href=""><span class="visuallyhidden">page </span>1</a></li>
+                                                    <li class="li_pagination_Non_Active"><a href="" aria-current="page"><span class="visuallyhidden">page </span>2</a></li>
+                                                    <li class="li_pagination_Non_Active"><a href=""><span class="visuallyhidden">page </span>...</a></li>
+                                                    <li class="li_pagination_Non_Active"><a href=""><span class="visuallyhidden">page </span>9</a></li>
+                                                    <li><a href=""><span class="visuallyhidden">next set of pages</span><span aria-hidden="true"><img src="./assets/icons/chevronRight.png" alt="chevronRight" class="chevronRight"></span></a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="pagination"></div>
+            </div>
+        </div>  
+    </main>
+    <!-- <footer>
+        <h1>Intégration Galion</h1>
+    </footer> -->
+    <script src="index.js"></script>
+</body>
+</html>
