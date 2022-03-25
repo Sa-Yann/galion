@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./creerNouveauLot_1.css">
+    <title>Créer Un Nouveau Lot</title>
+</head>
+<section class="body_pp">
+    <header class="flex_CtrCtr">
+        <h1>Intégration Galion: Créer un dossier</h1>
+        <br>
+        <br>
+    </header>
+    <main>
+        <form id="formContainer" class="formContainer" >
+            <div class="title_Pup">
+                <div class="retourWithElements flex_CtrCtr">
+                    <a href="./pageContrat_1.html" class="ahref_noStyle_White flex_CtrCtr">
+                        <img class="arrowRtrn__Pup" src="./assets/icons/fleche.png" alt="fleche">
+                        <h3>Retour</h3>
+                    </a>
+                </div>
+                <h2>créer un nouveau lot</h2>
+                <div id="crossContainer" class="crossContainer">
+                    <img class="crossClose" src="./assets/icons/cross_Grey.png" alt="croix">
+                </div>
+            </div>
+            <div class="container_2">
+                <div class="careful_Mention flex_CtrCtr">
+                    <h6>Ces champs ne sont pas obligatoires, cependant ils aident à la recherche rapide dans les tableaux.</h6>
+                </div>
+                <div  class="ligneDeChamp flex_CtrCtr">
+                    <div class="title_ligneDeChamp">
+                        <h4>Numéro du lot/mandat</h4>
+                    </div>
+                    <div class="inputCont_ligneDeChamp">
+                        <input id="numero_Lot" type="number"  placeholder="Numéro du lot/mandat">
+                    </div>
+                </div>
+                <div class="ligneDeChamp flex_CtrCtr">
+                    <div class="title_ligneDeChamp">
+                        <h4>Nom du propriétaire *</h4>
+                    </div>
+                    <div class="inputCont_ligneDeChamp">
+                        <input id="nom" type="text"  placeholder="Nom du propriétaire">
+                    </div>
+                </div>
+            </div>
+            <div class="container_3">
+                <div class="ligneDeChamp flex_CtrCtr">
+                    <div class="title_ligneDeChamp">
+                        <h4>Adresse du lot *</h4>
+                    </div>
+                    <div class="inputCont_ligneDeChamp">
+                        <input id="adresse" type="text" placeholder="Adresse du lot *">
+                    </div>
+                </div>
+                <div class="ligneDeChamp flex_CtrCtr">
+                    <div class="title_ligneDeChamp">
+                        <h4>Complément d'adresse</h4>
+                    </div>
+                    <div class="inputCont_ligneDeChamp">
+                        <input type="text" placeholder="Complément d'adresse">
+                    </div>
+                </div>
+                <div class="ligneDeChamp flex_CtrCtr">
+                    <div class="title_ligneDeChamp">
+                        <h4>Code postal et ville</h4>
+                    </div>
+                    <div id="containerDoubleInput_Yes_No" class="containerDoubleInput ">
+                        <div class="inputCont_ligneDeChamp_Half inputHalf_1">
+                            <input type="text" name="Code Postal" placeholder="Code Postal">
+                        </div>
+                        <div class="inputCont_ligneDeChamp_Half inputHalf_2">
+                            <input type="text" name="Ville" placeholder="Ville">
+                        </div>
+                    </div>
+                </div>
+                <div class="ligneDeChampYes_No flex_CtrCtr">
+                    <div class="title_ligneDeChamp">
+                        <h4>Meublé? *</h4>
+                    </div>
+                    <div class="containerDoubleInput ligneDeChamp">
+                        <div class="yes_no_BtnCont flex_CtrCtr">
+                            <input id="inputBtn_Yes" class="inputBtn inputBtnStyle_ON flex1" type="button" value="OUI">
+                            <input id="inputBtn_No" class="inputBtn inputBtnStyle_OFF flex1" type="button" value="NON">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="ligneDeChamp flex_CtrCtr">
+                    <div class="title_ligneDeChamp">
+                        <h4>Type de bien? *</h4>
+                    </div>
+                    <div class="containerDoubleInput_Img ligneDeChamp">
+                        <div class="img_BtnCont">
+                            <button id="type_Appart"
+                                class="inputImg appartement_NotChecked  inputImgStyle_OFF flex1" 
+                                type="button" 
+                                name="appartement"
+                                value="appartement"
+                                alt="appartement"  
+                            ></button>
+                            <button id="type_Maison"
+                                class="inputImg maison_NotChecked inputImgStyle_OFF flex1" 
+                                type="button" 
+                                name="maison"
+                                value="maison"
+                                alt="maison"
+                            ></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_DoubleInput">
+                    <div class="ligneDeChamp flex_CtrCtr">
+                        <div class="subCont_Left flex_CtrCtr">
+                            <div class="title_ligneDeChamp">
+                                <h4>Loyer (charges comprises) *</h4>
+                            </div>
+                            <div class="inputCont_ligneDeChamp_Small flex_CtrCtr">
+                                <input id="loyer" type="number" class="inputSmall" placeholder="Loyer">
+                                <div class="unit">
+                                    <h3>€</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subCont_Right flex_CtrCtr">
+                            <div class="title_ligneDeChamp">
+                                <h4>Étage</h4>
+                            </div>
+                            <div class="inputCont_ligneDeChamp_Small flex_CtrCtr">
+                                <input type="text" class="inputSmall" placeholder="1er">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ligneDeChamp flex_CtrCtr">
+                        <div class="subCont_Left flex_CtrCtr">
+                            <div class="title_ligneDeChamp">
+                                <h4>Superficie *</h4>
+                            </div>
+                            <div class="inputCont_ligneDeChamp_Small flex_CtrCtr">
+                                <input id="superficie" type="number" class="inputSmall" placeholder="Superficie">
+                                <div class="unit">
+                                    <h3>m²</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subCont_Right flex_CtrCtr">
+                            <div class="title_ligneDeChamp">
+                                <h4>Nombre de pièces *</h4>
+                            </div>
+                            <div class="inputCont_ligneDeChamp_Small flex_CtrCtr">
+                                <input id="nbr_Pieces" type="number" class="inputSmall" placeholder="Nombre">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerPopUp flex_CtrCtr">
+                <button id="buttonNonActivated" class="create_NotActive">
+                    Créer
+                </button>
+                <button id="buttonActivated" class="create_Active displayNone" style="background-color: #006464">
+                    <a class="ahref_noStyle_White" href="./choisir_Lot.html">
+                        <h4>Créer</h4>
+                    </a>
+                </button>
+            </div>
+        </form>
+    </main>
+    <footer class="flex_CtrCtr">
+            <br>
+            <h1>Intégration Galion: Créer un dossier</h1>
+            <br>
+    </footer>
+    <script src="./creerNouveauLot_1.js"></script>
+</section>
+</html>

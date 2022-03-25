@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./documents.css">
+    <title>Personnes</title>
+</head>
+<body >
+    <header>
+        <h1>Intégration Galion: Documents Screen</h1>
+        <br>
+    </header>
+    <main>
+        <div class="menuTop">
+            <div class="logo_MenuTop_Cont">
+                <img class="galionIcon" src="./assets/logos/burger.svg" alt="galionIcon">
+                <img src="./assets/logos/Logo_bleu_maxi.svg" alt="galionLogo">
+            </div>
+            <div class="identifiants">
+                <div class="flex_CtrCtr">
+                    <img src="./assets/userIcon/Union.svg" alt="userIcon">
+                    <h5>raison sociale</h5>
+                </div>
+                
+            </div>
+        </div>
+        <div class="retour">
+            <a href="./personneScreen_2.html" class="a ahref_noStyle_White flex_CtrCtr">
+                <img class="arrowRtrn" src="./assets/icons/fleche.png" alt="fleche">
+                <h3>Retour</h3>
+            </a>
+        </div>
+        <div class="mainBaliseContainer flex_CtrCtr">
+            <div class="baliseContainer flex_CtrCtr">
+                <div class="balise1 relative_Pos flex1">
+                    <div class="textInBalise absolute_Pos flex_CtrCtr">
+                        <h3>1. contrat</h3>
+                    </div>
+                    <img class="balise" src="./assets/icons/balise-start-light_green.svg" alt="balise_Start_Green">
+                </div>
+                <div class="balise2 relative_Pos flex1">
+                    <div class="textInBalise absolute_Pos flex_CtrCtr">
+                        <h3>2.lot</h3>
+                    </div>
+                    <img class="balise" src="./assets/icons/balise_Middle_Light_Green.svg" alt="balise_Middle">
+                </div>
+                <div class="balise3 relative_Pos flex1">
+                    <div class="textInBalise absolute_Pos flex_CtrCtr">
+                        <h3>3. Personnes</h3>
+                    </div>
+                    <img class="balise" src="./assets/icons/balise_Middle_Light_Green.svg" alt="balise_Middle">
+                </div>
+                <div class="balise4 relative_Pos flex1">
+                    <div class="textInBalise absolute_Pos flex_CtrCtr">
+                        <h3>4. documents</h3>
+                    </div>
+                    <img class="balise" src="./assets/icons/balise_Middle_Green.svg" alt="balise_Middle">
+                </div>
+                <div class="balise5 relative_Pos flex1">
+                    <div class="textInBalise absolute_Pos flex_CtrCtr">
+                        <h3>5. validation</h3>
+                    </div>
+                    <img class="balise" src="./assets/icons/balise_End.svg" alt="balise_End">
+                </div>
+            </div>
+        </div>
+        <div class="title_1 flex_CtrCtr">
+            <h2>Télécharger des pièces jointes</h2>
+        </div>
+        <div class="flex_CtrCtr">
+            <div class="containerTop2">
+                <div class="imgAndBtn_Cont flex_CtrCtr">
+                    <img src="./assets/icons/folder.svg" alt="dossier Icon">
+                    <button class="downloadBtn">
+                        <a class="ahref_noStyle_White" href="./documents.html">
+                            <h4 class="buttonCont2_Tittle" >Télécharger un fichier</h4>
+                        </a>
+                    </button>
+                </div>
+                <h5>Format : pdf, png, jpg (20 MO max par fichier)</h5>
+            </div>
+        </div>
+
+        <div id="PopUp"  class="deletPopUp displayNone">
+            <div class="crossDeletePopUp_Cont">
+                <img class="crossDeletePopUp closePopUp" src="./assets/icons/crossDeletePopUp.svg" alt="cross icon">
+            </div>
+            <h2>Supression documents</h2>
+            <div class="garbageCont flex_CtrCtr">
+                <img class="garbageBlue" src="./assets/icons/garbageBlue.svg" alt="grabage Icon">
+            </div>
+            <h4>Êtes-vous sur de vouloir supprimer ces documents importés ?</h4>
+            <div class="footerPopUp flex_CtrCtr">
+                <button class="return closePopUp">
+                    <!-- <a class="ahref_noStyle_White" href="./pageContrat_1.html">
+                        <h4>Annuler</h4>
+                    </a> -->
+                    <h4>Annuler</h4>
+                </button>
+                <button id="buttonPopUpActivated" class="next_Active ">
+                    <!-- <a class="ahref_noStyle_White" href="./documents.html">
+                        
+                    </a> -->
+                    <h4>Valider</h4>
+                </button>
+            </div>
+        </div>
+
+        <div class="container_3 flex_CtrCtr">
+            <div class="spaceBtwCont">
+                <div class="left_Cont">
+                    <div class="left_Cont_title">
+                        <h3>Documents importés</h3>
+                        <h4>13 documents</h4>
+                    </div>
+                    <div class="listDocs_leftCont">
+                        <ul class="listDocs">
+                            <li>
+                                <h5>Fiche de consentement.pdf</h5>
+                                <img class=" eraselistItem_Crosses" src="./assets/icons/cross_Document.svg" alt="">
+                            </li>
+                            <li>
+                                <h5>Carte d'identité.jpg</h5>
+                                <img class="cross_Doc eraselistItem_Crosses" src="./assets/icons/cross_Document.svg" alt="">
+                            </li>
+                            <li>
+                                <h5>Dermier avis d'imposition.pdf</h5>
+                                <img class="cross_Doc eraselistItem_Crosses" src="./assets/icons/cross_Document.svg" alt="">
+                            </li>
+                            <li>
+                                <h5>3 derniers bulletins de salaire.jpg</h5>
+                                <img class="cross_Doc eraselistItem_Crosses" src="./assets/icons/cross_Document.svg" alt="">
+                            </li>
+                            <li>
+                                <h5>Contrat de travail.pdf</h5>
+                                <img class="cross_Doc eraselistItem_Crosses" src="./assets/icons/cross_Document.svg" alt="">
+                            </li>
+                            <li>
+                                <h5>Fiche de consentement.pdf</h5>
+                                <img class="cross_Doc eraselistItem_Crosses" src="./assets/icons/cross_Document.svg" alt="">
+                            </li>
+                            <li>
+                                <h5>Carte d'identité.jpg</h5>
+                                <img class="cross_Doc eraselistItem_Crosses" src="./assets/icons/cross_Document.svg" alt="">
+                            </li>
+                            <li>
+                                <h5>Dermier avis d'imposition.pdf</h5>
+                                <img class="cross_Doc eraselistItem_Crosses" src="./assets/icons/cross_Document.svg" alt="">
+                            </li>
+                            <li>
+                                <h5>3 derniers bulletins de salaire.jpg</h5>
+                                <img class="cross_Doc eraselistItem_Crosses" src="./assets/icons/cross_Document.svg" alt="">
+                            </li>
+                            <li>
+                                <h5>Contrat de travail.pdf</h5>
+                                <img class="cross_Doc eraselistItem_Crosses" src="./assets/icons/cross_Document.svg" alt="">
+                            </li>
+                            <li>
+                                <h5>Dermier avis d'imposition.pdf</h5>
+                                <img class="cross_Doc eraselistItem_Crosses" src="./assets/icons/cross_Document.svg" alt="">
+                            </li>
+                            <li>
+                                <h5>3 derniers bulletins de salaire.jpg</h5>
+                                <img class="cross_Doc eraselistItem_Crosses" src="./assets/icons/cross_Document.svg" alt="">
+                            </li>
+                            <li>
+                                <h5>Contrat de travail.pdf</h5>
+                                <img class="cross_Doc eraselistItem_Crosses" src="./assets/icons/cross_Document.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right_Cont">
+                    <div class="hoverArea">
+                        <div id="client_Cont_1" class="client_Cont">
+                            <div class="imgAndName_Cont">
+                                <img id="arrow1" src="./assets/icons/exclude.svg" alt="exclude Icone">
+                                <h4>Dupont Test</h4>
+                            </div>
+                            <div class="typedeClient flex_CtrCtr">
+                                <h3>Garant</h3>
+                            </div>
+                        </div>
+                        <div id="client_Cont_List" class="client_Cont_List">
+                            <ul>
+                                <li>
+                                    <h5>Travailleur salarié</h5>
+                                </li>
+                                <li>
+                                    <h5>Travailleur salarié</h5>
+                                </li>
+                                <li>
+                                    <h5>Travailleur salarié</h5>
+                                </li>
+                                <li>
+                                    <h5>Travailleur salarié</h5>
+                                </li>
+                                <li>
+                                    <h5>Travailleur salarié</h5>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="client_Cont">
+                        <div class="imgAndName_Cont">
+                            <img src="./assets/icons/exclude.svg" alt="exclude Icone">
+                            <h4>Dupont Test</h4>
+                        </div>
+                        <div class="typedeClient flex_CtrCtr">
+                            <h3>Garant</h3>
+                        </div>
+                    </div>
+                    <div class="client_Cont">
+                        <div class="imgAndName_Cont">
+                            <img src="./assets/icons/exclude.svg" alt="exclude Icone">
+                            <h4>Dupont Test</h4>
+                        </div>
+                        <div class="typedeClient flex_CtrCtr">
+                            <h3>Garant</h3>
+                        </div>
+                    </div><div class="client_Cont">
+                        <div class="imgAndName_Cont">
+                            <img src="./assets/icons/exclude.svg" alt="exclude Icone">
+                            <h4>Dupont Test</h4>
+                        </div>
+                        <div class="typedeClient flex_CtrCtr">
+                            <h3>Garant</h3>
+                        </div>
+                    </div><div class="client_Cont">
+                        <div class="imgAndName_Cont">
+                            <img src="./assets/icons/exclude.svg" alt="exclude Icone">
+                            <h4>Dupont Test</h4>
+                        </div>
+                        <div class="typedeClient flex_CtrCtr">
+                            <h3>Garant</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+
+
+    <footer class="flex_CtrCtr">
+        <div class="footerButtons flex_CtrCtr">
+            <button class="return">
+                <a class="ahref_noStyle_White" href="./personneScreen_2.html">
+                    <h4>Retour</h4>
+                </a>
+            </button>
+            <button id="buttonActivated" class="next_Active">
+                <a class="ahref_noStyle_White" href="./sumUp.html">
+                    <h4>Suivant</h4>
+                </a>
+            </button>
+        </div>
+    </footer>
+    <script src="./documents.js"></script>
+</body>
+</html>

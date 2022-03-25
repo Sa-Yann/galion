@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./pageContrat_1.css">
     <title>submitFolders</title>
 </head>
-<body>
+<body >
     <header>
         <h1>Intégration Galion: Contrat Screen 1</h1>
         <br>
@@ -15,11 +15,11 @@
     <main>
         <div class="menuTop">
             <div class="logo_MenuTop_Cont">
-                <img class="galionIcon" src="./assets/logos/burger.png" alt="galionIcon">
-                <img src="./assets/logos/Logo_bleu_maxi.png" alt="galionLogo">
+                <img class="galionIcon" src="./assets/logos/burger.svg" alt="galionIcon">
+                <img src="./assets/logos/Logo_bleu_maxi.svg" alt="galionLogo">
             </div>
             <div class="identifiants">
-                <img src="./assets/userIcon/Union.png" alt="userIcon">
+                <img src="./assets/userIcon/Union.svg" alt="userIcon">
                 <h5>raison sociale</h5>
             </div>
         </div>
@@ -29,47 +29,49 @@
                 <h3>Retour</h3>
             </a>
         </div>
-        <div class="baliseContainer flex_CtrCtr">
-            <div class="balise1 relative_Pos">
-                <div class="textInBalise absolute_Pos flex_CtrCtr">
-                    <h3>1. contrat</h3>
+        <div class="mainBaliseContainer flex_CtrCtr">
+            <div class="baliseContainer flex_CtrCtr">
+                <div class="balise1 relative_Pos flex1">
+                    <div class="textInBalise absolute_Pos flex_CtrCtr">
+                        <h3>1. contrat</h3>
+                    </div>
+                    <img class="balise" src="./assets/icons/balise_Start_Green.svg" alt="balise_Start_Green">
                 </div>
-                <img src="./assets/icons/balise_Start_Green.png" alt="balise_Start_Green">
-            </div>
-            <div class="balise2 relative_Pos">
-                <div class="textInBalise absolute_Pos flex_CtrCtr">
-                    <h3>2.lot</h3>
+                <div class="balise2 relative_Pos flex1">
+                    <div class="textInBalise absolute_Pos flex_CtrCtr">
+                        <h3>2.lot</h3>
+                    </div>
+                    <img class="balise" src="./assets/icons/balise_Middle.svg" alt="balise_Middle">
                 </div>
-                <img src="./assets/icons/balise_Middle.png" alt="balise_Start_Green">
-            </div>
-            <div class="balise3 relative_Pos">
-                <div class="textInBalise absolute_Pos flex_CtrCtr">
-                    <h3>3. Personnes</h3>
+                <div class="balise3 relative_Pos flex1">
+                    <div class="textInBalise absolute_Pos flex_CtrCtr">
+                        <h3>3. Personnes</h3>
+                    </div>
+                    <img class="balise" src="./assets/icons/balise_Middle.svg" alt="balise_Middle">
                 </div>
-                <img src="./assets/icons/balise_Middle.png" alt="balise_Start_Green">
-            </div>
-            <div class="balise4 relative_Pos">
-                <div class="textInBalise absolute_Pos flex_CtrCtr">
-                    <h3>4. documents</h3>
+                <div class="balise4 relative_Pos flex1">
+                    <div class="textInBalise absolute_Pos flex_CtrCtr">
+                        <h3>4. documents</h3>
+                    </div>
+                    <img class="balise" src="./assets/icons/balise_Middle.svg" alt="balise_Middle">
                 </div>
-                <img src="./assets/icons/balise_Middle.png" alt="balise_Start_Green">
-            </div>
-            <div class="balise5 relative_Pos">
-                <div class="textInBalise absolute_Pos flex_CtrCtr">
-                    <h3>5. validation</h3>
+                <div class="balise5 relative_Pos flex1">
+                    <div class="textInBalise absolute_Pos flex_CtrCtr">
+                        <h3>5. validation</h3>
+                    </div>
+                    <img class="balise" src="./assets/icons/balise_End.svg" alt="balise_End">
                 </div>
-                <img src="./assets/icons/balise_End.png" alt="balise_Start_Green">
             </div>
         </div>
         <div class="title_1 flex_CtrCtr">
-            <h2>Sélectionner UN CONTRAT</h2>
+            <h2>Sélectionner un contrat</h2>
         </div>
         <div id="input_Container" class="info_refFolder_Email flex_CtrCtr">
             <div class="inputs_Container flex_SpaceBtwn">
                 <div class="refFolder flex_CtrCtr">
                     <input id="inputRefNumber" type="number" name="refFolder" placeholder="Numéro de contrat">
                     <div class="arrowDown flex_CtrCtr">
-                        <img src="./assets/icons/arrowDown.png" alt="">
+                        <img src="./assets/icons/arrowDown.svg" alt="">
                     </div>
                     
                 </div>
@@ -90,117 +92,124 @@
         <div class="title_2 flex_CtrCtr">
             <h2>Voulez-vous reprendre un dossier</h2>
         </div>
-        <div class="table_Container frame4Container">
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col">
-                            <div class="flex_CtrCtr">
-                                <div class="flex_CtrCtr stateFolderTitle">
-                                    <img id="arrow" class="arrowUp" src="./assets/icons/arrowUp.png" alt="arrow up">
-                                    <h3>Proprietaire</h3>
+        <div class="table_Container flex_CtrCtr">
+            <div class="frame4Container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <div class="flex_CtrCtr">
+                                    <div class="flex_CtrCtr stateFolderTitle">
+                                        <div id="arrow">
+                                            <img id="arrowUp_col1" class="arrowUp arrowUp_col1" src="./assets/icons/arrowUp.svg"
+                                                alt="arrow up">
+                                            <!-- <img id="arrowDown_col1" class="arrowDown_col1" src="./assets/icons/arrowDownThead.svg" alt="arrow up"> -->
+                                        </div>
+                                        <h3>Proprietaire</h3>
+                                    </div>
                                 </div>
-                            </div>
-                        </th>
+                            </th>
             
-                        <th scope="col" class="name">
-                            <h3>Adresse</h3>
-                        </th>
+                            <th scope="col" class="name">
+                                <h3>Adresse</h3>
+                            </th>
             
-                        <th scope="col">
-                            <h3>Locataire</h3>
-                        </th>
+                            <th scope="col">
+                                <h3>Locataire</h3>
+                            </th>
             
-                        <th scope="col">
-                            <!-- <h3>État du dossier</h3> -->
-                        </th>
+                            <th scope="col">
+                                <!-- <h3>État du dossier</h3> -->
+                            </th>
             
-                        <th scope="col">
-                            <!-- <h3>Icon</h3> -->
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="td_height60">
-                        <th scope="row">
-                            <div class="flex_CtrCtr">
-                                <h3 class="noFollowUp flex_CtrCtr">Dupont</h3>
-                            </div>
-                        </th>
-                        <td class="name">
-                            <h3>26 rue des champs, 75010, Paris</h3>
-                        </td>
-                        <td>
-                            <h3>Dupont</h3>
-                        </td>
-                        <td class="td_height60 flex_CtrCtr">
-                            <button class="finish flex_CtrCtr">
-                                Reprendre
-                            </button>
-                        </td>
-                        <td><img class="garbage" src="./assets/icons/garbage.png" alt="garbage"></td>
-                    </tr>
-                    <tr class="td_height60">
-                        <th scope="row">
-                            <div class="flex_CtrCtr">
-                                <h3 class="noFollowUp flex_CtrCtr">Dupont</h3>
-                            </div>
-                        </th>
-                        <td class="name">
-                            <h3>27 rue des champs, 75010, Paris</h3>
-                        </td>
-                        <td>
-                            <h3>Dupont</h3>
-                        </td>
-                        <td class="td_height60 flex_CtrCtr">
-                            <button class="finish flex_CtrCtr">
-                                Reprendre
-                            </button>
-                        </td>
-                        <td><img class="garbage" src="./assets/icons/garbage.png" alt="garbage"></td>
-                    </tr>
-                    <tr class="td_height60">
-                        <th scope="row">
-                            <div class="flex_CtrCtr">
-                                <h3 class="noFollowUp flex_CtrCtr">Dupont</h3>
-                            </div>
-                        </th>
-                        <td class="name">
-                            <h3>28 rue des champs, 75010, Paris</h3>
-                        </td>
-                        <td>
-                            <h3>Dupont</h3>
-                        </td>
-                        <td class="td_height60 flex_CtrCtr">
-                            <button class="finish flex_CtrCtr">
-                                Reprendre
-                            </button>
-                        </td>
-                        <td><img class="garbage" src="./assets/icons/garbage.png" alt="garbage"></td>
-                    </tr>
-                    <tr class="td_height60 borderRadiusBottom">
-                        <th scope="row">
-                            <div class="flex_CtrCtr">
-                                <h3 class="noFollowUp flex_CtrCtr">Dupont</h3>
-                            </div>
-                        </th>
-                        <td class="name">
-                            <h3>29 rue des champs, 75010, Paris</h3>
-                        </td>
-                        <td>
-                            <h3>Dupont</h3>
-                        </td>
-                        <td class="td_height60 flex_CtrCtr">
-                            <button class="finish flex_CtrCtr">
-                                Reprendre
-                            </button>
-                        </td>
-                        <td><img class="garbage" src="./assets/icons/garbage.png" alt="garbage"></td>
-                    </tr>
+                            <th scope="col">
+                                <!-- <h3>Icon</h3> -->
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="td_height47">
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="noFollowUp flex_CtrCtr">Dupont</h3>
+                                </div>
+                            </th>
+                            <td class="name">
+                                <h3>26 rue des champs, 75010, Paris</h3>
+                            </td>
+                            <td>
+                                <h3>Dupont</h3>
+                            </td>
+                            <td class="td_height47 flex_CtrCtr">
+                                <button class="finish flex_CtrCtr">
+                                    Reprendre
+                                </button>
+                            </td>
+                            <td><img class="garbage" src="./assets/icons/garbage.svg" alt="garbage"></td>
+                        </tr>
+                        <tr class="td_height47">
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="noFollowUp flex_CtrCtr">Dupont</h3>
+                                </div>
+                            </th>
+                            <td class="name">
+                                <h3>27 rue des champs, 75010, Paris</h3>
+                            </td>
+                            <td>
+                                <h3>Dupont</h3>
+                            </td>
+                            <td class="td_height47 flex_CtrCtr">
+                                <button class="finish flex_CtrCtr">
+                                    Reprendre
+                                </button>
+                            </td>
+                            <td><img class="garbage" src="./assets/icons/garbage.svg" alt="garbage"></td>
+                        </tr>
+                        <tr class="td_height47">
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="noFollowUp flex_CtrCtr">Dupont</h3>
+                                </div>
+                            </th>
+                            <td class="name">
+                                <h3>28 rue des champs, 75010, Paris</h3>
+                            </td>
+                            <td>
+                                <h3>Dupont</h3>
+                            </td>
+                            <td class="td_height47 flex_CtrCtr">
+                                <button class="finish flex_CtrCtr">
+                                    Reprendre
+                                </button>
+                            </td>
+                            <td><img class="garbage" src="./assets/icons/garbage.svg" alt="garbage"></td>
+                        </tr>
+                        <tr class="td_height47 borderRadiusBottom">
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="noFollowUp flex_CtrCtr">Dupont</h3>
+                                </div>
+                            </th>
+                            <td class="name">
+                                <h3>29 rue des champs, 75010, Paris</h3>
+                            </td>
+                            <td>
+                                <h3>Dupont</h3>
+                            </td>
+                            <td class="td_height47 flex_CtrCtr">
+                                <button class="finish flex_CtrCtr">
+                                    Reprendre
+                                </button>
+                            </td>
+                            <td><img class="garbage" src="./assets/icons/garbage.svg" alt="garbage"></td>
+                        </tr>
             
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
+        
         
 
     </main>

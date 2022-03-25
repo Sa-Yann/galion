@@ -15,8 +15,8 @@
     <main>
         <div class="menuTop">
             <div class="logo_MenuTop_Cont">
-                <img class="galionIcon" src="./assets/logos/burger.png" alt="galionIcon">
-                <img src="./assets/logos/Logo_bleu_maxi.png" alt="galionLogo">
+                <img class="galionIcon" src="./assets/logos/burger.svg" alt="galionIcon">
+                <img src="./assets/logos/Logo_bleu_maxi.svg" alt="galionLogo">
             </div>
             <div class="sectionsTextMenu">
                 <a class="ahref_noStyle_White" href=""><h5>MES CHIFFRES</h5></a>
@@ -26,29 +26,30 @@
                 <a class="ahref_noStyle_White" href=""><h5>F.A.Q</h5></a>
             </div>
             <div class="identifiants">
-                <img src="./assets/userIcon/Union.png" alt="userIcon">
+                <img src="./assets/userIcon/Union.svg" alt="userIcon">
                 <h5>raison sociale</h5>
             </div>
         </div>
         <div class="retour">
-            <img class="arrowRtrn" src="./assets/icons/fleche.png" alt="fleche">
+            <img class="arrowRtrn" src="./assets/icons/fleche.svg" alt="fleche">
             <h3>Retour</h3>
         </div>
         <div class="title_Search_Submit">
             <div class="title flex_AlignCtr flex1">
-                <img class="titleIcon" src="./assets/userIcon/UnionGreen.png" alt="userIcon">
+                <img class="titleIcon" src="./assets/userIcon/UnionGreen.svg" alt="userIcon">
                 <h2 class="titleText">MES DOSSIERS LOCATAIRES</h2>
             </div>
             <div class="searchCont flex_CtrCtr flex1">
                 <input type="search" class="searchInput" placeholder="ex: adresse du bien, nom locataire">
-                <img src="./assets/icons/searchIcon.png" alt="" class="searchIcon">
+                <img src="./assets/icons/searchIcon.svg" alt="" class="searchIcon">
             </div>
-            
-            <button class="submit flex1">
-                <a class="ahref_noStyle_White" href="./pagecontrat_1.html">
-                    <h4>Soumettre un dossier</h4>
-                </a>
-            </button>
+            <div class="containerButtonSubmit flex1">
+                <button class="submit">
+                    <a class="ahref_noStyle_White" href="./pagecontrat_1.html">
+                        <h4>Soumettre un dossier</h4>
+                    </a>
+                </button>
+            </div>
         </div>
         <div class="frame4Container flex_CtrCtr">
             <div class="container">
@@ -71,7 +72,10 @@
                             <th scope="col">
                                 <div class="flex_CtrCtr">
                                     <div class="flex_CtrCtr stateFolderTitle">
-                                        <img class="arrowUp" src="./assets/icons/arrowUp.png" alt="arrow up">
+                                        <div id="arrowCol1" class="arrows">
+                                            <img id="arrowUp_col1" class="arrowUp arrowUp_col" src="./assets/icons/arrowUp.svg" alt="arrow up">
+                                            <!-- <img id="arrowDown_col1" class="arrowDown_col1" src="./assets/icons/arrowDownThead.svg" alt="arrow up"> -->
+                                        </div>
                                         <h3>État du dossier</h3>
                                     </div>
                                 </div>
@@ -85,16 +89,19 @@
                             <th scope="col">
                                 <h3>Adresse</h3>
                             </th>
-                            <th scope="col">
+                            <!-- <th scope="col">
                                 <h3>État du dossier</h3>
-                            </th>
+                            </th> -->
                             <th scope="col">
                                 <h3>Type de bien</h3>
                             </th>
                             <th scope="col">
                                 <div class="flex_CtrCtr">
                                     <div class="flex_CtrCtr stateFolder">
-                                        <img class="arrowUp" src="./assets/icons/arrowUp.png" alt="arrow up">
+                                        <div id="arrowCol6" class="arrows">
+                                            <img id="arrowUp_col6" class="arrowUp arrowUp_col" src="./assets/icons/arrowUp.svg" alt="arrow up">
+                                            <!-- <img id="arrowDown_col1" class="arrowDown_col1" src="./assets/icons/arrowDownThead.svg" alt="arrow up"> -->
+                                        </div>
                                         <h3>Mise à jour</h3>
                                     </div>
                                 </div>
@@ -107,39 +114,49 @@
                             </th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr class="td_height60">
+                    <tbody id="tbody">
+                        <tr class="maxHeight47px">
                             <th scope="row">
                                 <div class="flex_CtrCtr">
-                                    <h3 class="noFollowUp flex_CtrCtr">Sans suite</h3>
+                                    <h3 class="noFollowUpBtn flex_CtrCtr button_Style_folderState">Sans suite</h3>
                                 </div>
                             </th>
                             <td></td>
                             <td class="name">
-                                <h3>Luc IBRUN, Thibault JEAN...(4)</h3>
+                                <h3>Luc IBRUN, Thibault<br>JEAN...(4)</h3>
                             </td>
-                            <td class="address td_height60 ">
+                            <!-- <td class="address td_height47 ">
                                 <div>
                                     <h3>Résidence du Verger</h3>
                                     <h3>16 rue friant, Paris, 75014</h3>
                                 </div>
+                            </td> -->
+                            <td class="address flex_CtrCtr">
+                                    <div>
+                                        <h3>16 rue friant, Paris, 75014</h3>
+                                        <h3>Appartement 123</h3>
+                                    </div>
                             </td>
-                            <td><img src="./assets/icons/buidingIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/buidingIcon.svg" alt="buildingIcon">
+                                </div>  
+                            </td>
                             <td>
                                 <h3>27 Avr</h3>
                             </td>
-                            <td class="td_height60 flex_CtrCtr">
-                                <button class="dwnload flex_CtrCtr">
+                            <td class="td_height47">
+                                <button class="dwnload">
                                     Télécharger l'agrément
                                 </button>
                             </td>
-                            <td><img class="fileAttached" src="./assets/icons/pieceJointe.png" alt="piece Jointe"></td>
-                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                            <td><img class="fileAttached" src="./assets/icons/pieceJointe.svg" alt="piece Jointe"></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.svg" alt="apperçu"></td>
                         </tr>
                         <tr>
                             <th scope="row">
                                 <div class="flex_CtrCtr">
-                                    <h3 class="running flex_CtrCtr">En Cours</h3>
+                                    <h3 class="runningBtn button_Style_folderState flex_CtrCtr">En Cours</h3>
                                 </div>
                             </th>
                             <td></td>
@@ -152,29 +169,38 @@
                                     <h3>Appartement 123</h3>
                                 </div>
                             </td>
-                            <td><img src="./assets/icons/buidingIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <div class="flex_CtrCtr">
+                        
+                                    <div class="flex_CtrCtr">
+                                        <img src="./assets/icons/buidingIcon.svg" alt="buildingIcon">
+                                    </div>
+                        
+                                </div>
+                            </td>
                             <td>
                                 <h3>27 Avr</h3>
                             </td>
                             <td>
                                 <!-- <h3>Marquer sans suite</h3> -->
                             </td>
-                            <td ></td>
-                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                            <td></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.svg" alt="apperçu"></td>
                         </tr>
                         <tr>
                             <th scope="row">
                                 <div class="flex_CtrCtr"> 
-                                    <h3 class="checked flex_CtrCtr">Validé</h3>
-                                </div>
+                                    <h3 class="checkedBtn button_Style_folderState flex_CtrCtr">Validé</h3>
+                                </div> 
                             </th>
                             <td>
                                 <div class="backgroundCrossRed flex_CtrCtr">
-                                    <div>
-                                        <img id="noGaranty_Img" class="garantyState" src="./assets/icons/noGaranty.png" alt="pas de garantie">
+                                    <div >
+                                        <img id="noGaranty_Img" class="garantyState" src="./assets/icons/underGaranty.svg" alt="pas de garantie">
+                                        <h5>Non mis en garantie</h5>
                                     </div>
                                     <div id="redcrossId" class="cross_Refused flex_CtrCtr">
-                                        <!-- <img src="./assets/icons/cross_White.png" alt="croix"> -->
+                                        <!-- <img src="./assets/icons/cross_White.svg" alt="croix"> -->
                                     </div>
                                 </div>
                                 
@@ -187,31 +213,38 @@
                                     <h3>16 rue friant, Paris, 75014</h3>
                                 </div>
                             </td>
-                            <td><img src="./assets/icons/buidingIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/buidingIcon.svg" alt="buildingIcon">
+                                </div>
+                            </td>
                             <td>
                                 <h3>27 Avr</h3>
                             </td>
-                            <td class="td_height60 flex_CtrCtr">
-                                <button class="dwnload flex_CtrCtr">
+                            <td class="td_height47 ">
+                                <button class="dwnload">
                                     Télécharger l'agrément
                                 </button>
                             </td>
-                            <td><img class="fileAttached" src="./assets/icons/pieceJointe.png" alt="piece Jointe"></td>
-                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                            <td>
+                        
+                            </td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.svg" alt="apperçu"></td>
                         </tr>
                         <tr>
                             <th scope="row">
                                 <div class="flex_CtrCtr">
-                                    <h3 class="checked flex_CtrCtr">Validé</h3>
+                                    <h3 class="checkedBtn button_Style_folderState flex_CtrCtr">Validé</h3>
                                 </div>
                             </th>
                             <td>
                                 <div class="backgroundCrossGreen flex_CtrCtr">
                                     <div>
-                                        <img id="underGaranty" class="garantyState" src="./assets/icons/underGaranty.png" alt="sous garantie">
+                                        <img id="underGaranty" class="garantyState" src="./assets/icons/underGaranty.svg" alt="sous garantie">
+                                        <h5>Mis en garantie</h5>
                                     </div>
                                     <div class="cross_Checked flex_CtrCtr">
-                                        <!-- <img src="./assets/icons/checked.png" alt="checked Icon"> -->
+                                        <!-- <img src="./assets/icons/checked.svg" alt="checked Icon"> -->
                                     </div>
                                     
                                 </div>
@@ -224,31 +257,36 @@
                                     <h3>16 rue friant, Paris, 75014</h3>
                                </div>
                             </td>
-                            <td><img src="./assets/icons/buidingIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/buidingIcon.svg" alt="buildingIcon">
+                                </div>
+                            </td>
                             <td>
                                 <h3>27 Avr</h3>
                             </td>
-                            <td class="td_height60 flex_CtrCtr">
-                                <button class="dwnload flex_CtrCtr">
+                            <td class="td_height47">
+                                <button class="dwnload">
                                     Télécharger l'agrément
                                 </button>
                             </td>
-                            <td><img class="fileAttached" src="./assets/icons/pieceJointe.png" alt="piece Jointe"></td>
-                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                            <td><img class="fileAttached" src="./assets/icons/pieceJointe.svg" alt="piece Jointe"></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.svg" alt="apperçu"></td>
                         </tr>
                         <tr>
                             <th scope="row">
                                 <div class="flex_CtrCtr">
-                                    <h3 class="checked flex_CtrCtr">Validé</h3>
+                                    <h3 class="checkedBtn button_Style_folderState flex_CtrCtr">Validé</h3>
                                 </div>
                             </th>
                             <td>
                                 <div class="backgroundHourglassOrange flex_CtrCtr">
                                     <div>
-                                        <img id="waiting4Garanty" class="garantyState" src="./assets/icons/waiting4Garanty.png" alt="en attente de garantie">
+                                        <img id="waiting4Garanty" class="garantyState" src="./assets/icons/waiting4Garanty.svg" alt="en attente de garantie">
+                                        <h5>En attente de mide en garantie</h5>
                                     </div>
                                     <div class="cross_Hourglass flex_CtrCtr">
-                                        <!-- <img src="./assets/icons/hourglass.png" alt="checked Icon"> -->
+                                        <!-- <img src="./assets/icons/hourglass.svg" alt="checked Icon"> -->
                                     </div>
                             
                                 </div>
@@ -261,31 +299,36 @@
                                     <h3>16 rue friant, Paris, 75014</h3>
                                 </div>
                             </td>
-                            <td><img src="./assets/icons/buidingIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/buidingIcon.svg" alt="buildingIcon">
+                                </div>
+                            </td>
                             <td>
                                 <h3>27 Avr</h3>
                             </td>
-                            <td class="td_height60 flex_CtrCtr">
-                                <button class="dwnload_Agreement flex_CtrCtr">
+                            <td class="td_height47">
+                                <button class="dwnload_Agreement">
                                     Télécharger l’accord préalable
                                 </button>
                             </td>
-                            <td><img class="fileAttached" src="./assets/icons/pieceJointe.png" alt="piece Jointe"></td>
-                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                            <td><img class="fileAttached" src="./assets/icons/pieceJointe.svg" alt="piece Jointe"></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.svg" alt="apperçu"></td>
                         </tr>
                         <tr>
                             <th scope="row">
                                 <div class="flex_CtrCtr">
-                                    <h3 class="checked flex_CtrCtr">Validé</h3>
+                                    <h3 class="checkedBtn button_Style_folderState flex_CtrCtr">Validé</h3>
                                 </div>
                             </th>
                             <td>
                                 <div class="backgroundCrossRed flex_CtrCtr">
                                     <div>
-                                        <img  class="garantyState" src="./assets/icons/noGaranty.png" alt="pas de garantie">
+                                        <img  class="garantyState" src="./assets/icons/underGaranty.svg" alt="pas de garantie">
+                                        <h5>Non mis en garantie</h5>
                                     </div>
                                     <div  class="cross_Refused flex_CtrCtr">
-                                        <!-- <img src="./assets/icons/cross_White.png" alt="croix"> -->
+                                        <!-- <img src="./assets/icons/cross_White.svg" alt="croix"> -->
                                     </div>
                                 </div>
                             
@@ -298,22 +341,26 @@
                                     <h3>16 rue friant, Paris, 75014</h3>
                                 </div>
                             </td>
-                            <td><img src="./assets/icons/buidingIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/buidingIcon.svg" alt="buildingIcon">
+                                </div>
+                            </td>
                             <td>
                                 <h3>27 Avr</h3>
                             </td>
-                            <td class="td_height60 flex_CtrCtr">
-                                <button class="dwnload flex_CtrCtr">
+                            <td class="td_height47">
+                                <button class="dwnload">
                                     Télécharger l'agrément
                                 </button>
                             </td>
-                            <td><img class="fileAttached" src="./assets/icons/pieceJointe.png" alt="piece Jointe"></td>
-                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                            <td><img class="fileAttached" src="./assets/icons/pieceJointe.svg" alt="piece Jointe"></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.svg" alt="apperçu"></td>
                         </tr>
                         <tr>
                             <th scope="row">
                                 <div class="flex_CtrCtr">
-                                    <h3 class="refused flex_CtrCtr">Refusé</h3>
+                                    <h3 class="refusedBtn button_Style_folderState flex_CtrCtr">Refusé</h3>
                                 </div>
                             </th>
                             <td></td>
@@ -325,20 +372,24 @@
                                     <h3>16 rue friant, Paris, 75014</h3>
                                 </div>
                             </td>
-                            <td><img src="./assets/icons/houseIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/houseIcon.svg" alt="buildingIcon">
+                                </div>
+                            </td>
                             <td>
                                 <h3>27 Avr</h3>
                             </td>
-                            <td class="td_height60">
+                            <td class="td_height47">
                                 <!-- <h3>Télécharger l'agrément</h3> -->
                             </td>
                             <td></td>
-                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.svg" alt="apperçu"></td>
                         </tr>
                         <tr class="incomplete_BckGrnd">
                             <th scope="row">
                                 <div class="flex_CtrCtr">
-                                    <h3 class="incomplete flex_CtrCtr">Incomplet</h3>
+                                    <h3 class="incompleteBtn button_Style_folderState flex_CtrCtr">Incomplet</h3>
                                 </div>
                             </th>
                             <td></td>
@@ -350,23 +401,27 @@
                                     <h3>16 rue friant, Paris, 75014</h3>
                                 </div>
                             </td>
-                            <td><img src="./assets/icons/houseIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/houseIcon.svg" alt="buildingIcon">
+                                </div>
+                            </td>
                             <td>
                                 <h3>27 Avr</h3>
                             </td>
-                            <td class="td_height60 flex_CtrCtr">
-                                <button class="askAgain flex_CtrCtr">
+                            <td class="td_height47">
+                                <button class="askAgain">
                                     <!-- Relancer -->
                                     <!-- <h3 class="askAgain flex_CtrCtr">Relancer</h3> -->
                                 </button>
                             </td>
                             <td></td>
-                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.svg" alt="apperçu"></td>
                         </tr>
                         <tr>
                             <th scope="row">
                                 <div class="flex_CtrCtr">
-                                    <h3 class="refused flex_CtrCtr">Refusé</h3>
+                                    <h3 class="refusedBtn button_Style_folderState flex_CtrCtr">Refusé</h3>
                                 </div>
                             </th>
                             <td></td>
@@ -378,20 +433,24 @@
                                     <h3>16 rue friant, Paris, 75014</h3>
                                 </div>
                             </td>
-                            <td><img src="./assets/icons/houseIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/houseIcon.svg" alt="buildingIcon">
+                                </div>
+                            </td>
                             <td>
                                 <h3>27 Avr</h3>
                             </td>
-                            <td class="td_height60">
+                            <td class="td_height47">
                                 <!-- <h3>Télécharger l'agrément</h3> -->
                             </td>
                             <td></td>
-                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.svg" alt="apperçu"></td>
                         </tr>
                         <tr>
                             <th scope="row">
                                 <div class="flex_CtrCtr">
-                                    <h3 class="refused flex_CtrCtr">Refusé</h3>
+                                    <h3 class="refusedBtn button_Style_folderState flex_CtrCtr">Refusé</h3>
                                 </div>
                             </th>
                             <td></td>
@@ -403,15 +462,19 @@
                                     <h3>16 rue friant, Paris, 75014</h3>
                                 </div>
                             </td>
-                            <td><img src="./assets/icons/houseIcon.png" alt="buildingIcon"></td>
+                            <td>
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/houseIcon.svg" alt="buildingIcon">
+                                </div>
+                            </td>
                             <td>
                                 <h3>27 Avr</h3>
                             </td>
-                            <td class="td_height60">
+                            <td class="td_height47">
                                 <!-- <h3>Télécharger l'agrément</h3> -->
                             </td>
                             <td></td>
-                            <td><img class="eye" src="./assets/icons/eye_Grey.png" alt="apperçu"></td>
+                            <td><img class="eye" src="./assets/icons/eye_Grey.svg" alt="apperçu"></td>
                         </tr>
                     </tbody>
                     <tfoot class="flex_CtrCtr">
@@ -420,13 +483,16 @@
                             <td scope="row"  colspan="8">
                                 <div class="footer_Container flex_CtrCtr">
                                     <div class="leftSide_PageInfo flex_CtrCtr">
-                                        <h5>afficher</h5>
-                                        <div class="amountOfResults_arrowDown">
+                                        <h5>Afficher</h5>
+                                        <div class="amountOfResults_arrowDown flex_CtrCtr">
                                             <!-- <div class="amountOfResults">10</div>
-                                            <img class="arrowDown" src="./assets/icons/arrowDown.png" alt=""> -->
+                                            <img class="arrowDown" src="./assets/icons/arrowDown.svg" alt=""> -->
                                             <label for="amountOfResults"></label>
                                             
-                                            <input type="number" id="amountOfResults" name="tableResult_Amount" min="1" max="10">
+                                            <input type="number" id="amountOfResults" name="tableResult_Amount" min="1" max="10" placeholder="10">
+                                            <div class="arrowDownNb_Input flex_CtrCtr">
+                                                <img src="./assets/icons/arrowDown.svg" alt="">
+                                            </div>
                                         </div>
                                         <h5>résultats par page</h5>
                                     </div>
@@ -435,13 +501,13 @@
                                         <div class="numbers">
                                             <nav aria-label="pagination" class="flex_CtrCtr">
                                                 <ul class="pagination flex_CtrCtr">
-                                                    <li><a href=""><span aria-hidden="true"><img src="./assets/icons/chevronLeft.png" alt="chevronLeft" class="chevronLeft"></span><span class="visuallyhidden">previous set of pages</span></a>
+                                                    <li><a href=""><span aria-hidden="true"><img src="./assets/icons/chevronLeft.svg" alt="chevronLeft" class="chevronLeft"></span><span class="visuallyhidden">previous set of pages</span></a>
                                                     </li>
                                                     <li class="li_pagination_Active"><a  href=""><span class="visuallyhidden">page </span>1</a></li>
                                                     <li class="li_pagination_Non_Active"><a href="" aria-current="page"><span class="visuallyhidden">page </span>2</a></li>
                                                     <li class="li_pagination_Non_Active"><a href=""><span class="visuallyhidden">page </span>...</a></li>
                                                     <li class="li_pagination_Non_Active"><a href=""><span class="visuallyhidden">page </span>9</a></li>
-                                                    <li><a href=""><span class="visuallyhidden">next set of pages</span><span aria-hidden="true"><img src="./assets/icons/chevronRight.png" alt="chevronRight" class="chevronRight"></span></a></li>
+                                                    <li><a href=""><span class="visuallyhidden">next set of pages</span><span aria-hidden="true"><img src="./assets/icons/chevronRight.svg" alt="chevronRight" class="chevronRight"></span></a></li>
                                                 </ul>
                                             </nav>
                                         </div>

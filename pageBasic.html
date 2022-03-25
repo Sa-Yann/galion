@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./personneScreen_2.css">
+    <title>Personnes</title>
+</head>
+<body >
+    <header>
+        <h1>Intégration Galion: Documents Screen 2</h1>
+        <br>
+    </header>
+    <main>
+        <div class="menuTop">
+            <div class="logo_MenuTop_Cont">
+                <img class="galionIcon" src="./assets/logos/burger.svg" alt="galionIcon">
+                <img src="./assets/logos/Logo_bleu_maxi.svg" alt="galionLogo">
+            </div>
+            <div class="identifiants">
+                <img src="./assets/userIcon/Union.svg" alt="userIcon">
+                <h5>raison sociale</h5>
+            </div>
+        </div>
+        <div class="retour">
+            <a href="./personneScreen.html" class="a ahref_noStyle_White flex_CtrCtr">
+                <img class="arrowRtrn" src="./assets/icons/fleche.png" alt="fleche">
+                <h3>Retour</h3>
+            </a>
+        </div>
+        <div class="mainBaliseContainer flex_CtrCtr">
+            <div class="balise1 relative_Pos flex1">
+                <div class="textInBalise absolute_Pos flex_CtrCtr">
+                    <h3>1. contrat</h3>
+                </div>
+                <img class="balise" src="./assets/icons/balise-start-light_green.svg" alt="balise_Start_Green">
+            </div>
+            <div class="balise2 relative_Pos flex1">
+                <div class="textInBalise absolute_Pos flex_CtrCtr">
+                    <h3>2.lot</h3>
+                </div>
+                <img class="balise" src="./assets/icons/balise_Middle_Light_Green.svg" alt="balise_Middle">
+            </div>
+            <div class="balise3 relative_Pos flex1">
+                <div class="textInBalise absolute_Pos flex_CtrCtr">
+                    <h3>3. Personnes</h3>
+                </div>
+                <img class="balise" src="./assets/icons/balise_Middle_Light_Green.svg" alt="balise_Middle">
+            </div>
+            <div class="balise4 relative_Pos flex1">
+                <div class="textInBalise absolute_Pos flex_CtrCtr">
+                    <h3>4. documents</h3>
+                </div>
+                <img class="balise" src="./assets/icons/balise_Middle_Green.svg" alt="balise_Middle">
+            </div>
+            <div class="balise5 relative_Pos flex1">
+                <div class="textInBalise absolute_Pos flex_CtrCtr">
+                    <h3>5. validation</h3>
+                </div>
+                <img class="balise" src="./assets/icons/balise_End.svg" alt="balise_End">
+            </div>
+        </div>
+        <div class="title_1 flex_CtrCtr">
+            <h2>Télécharger des pièces jointes</h2>
+        </div>
+        
+    </main>
+    <footer class="flex_CtrCtr">
+        <div class="footerButtons flex_CtrCtr">
+            <button class="return">
+                <a class="ahref_noStyle_White" href="./pageContrat_1.html">
+                    <h4>Retour</h4>
+                </a>
+            </button>
+            <button id="buttonNonActivated" class="nextNotActive">
+                Suivant
+            </button>
+            <button id="buttonActivated" class="next_Active displayNone" style="background-color: #006464">
+                <a class="ahref_noStyle_White" href="./documents.html">
+                    <h4>Suivant</h4>
+                </a>
+            </button>
+        </div>
+    </footer>
+    <script src="./documents.js"></script>
+</body>
+</html>

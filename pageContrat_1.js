@@ -8,33 +8,35 @@ document.getElementById(`input_Container`).addEventListener('keyup', function(){
     console.log("file: pageContrat_1.js ~ line 3 ~ inputRefBumber", inputRefBumber.value);
 
     const emailInput = document.getElementById('emailInput');
-    console.log("file: pageContrat_1.js ~ line 7 ~ emailInput", emailInput.value);
 
     const buttonNonActivated = document.getElementById('buttonNonActivated');
 
     const buttonActivated = document.getElementById('buttonActivated');
 
     if(inputRefBumber.value && emailInput.value) {
-        
-        // console.log("file: pageContrat_1.js ~ line 15 ~ document.getElementById ~ buttonNonActivated", buttonNonActivated)
         buttonNonActivated.classList.add('displayNone');
-        
-        // console.log("file: pageContrat_1.js ~ line 19 ~ document.getElementById ~ buttonActivated", buttonActivated)
         buttonActivated.classList.remove('displayNone');
+        console.log('remplie')
     } else {
         buttonNonActivated.classList.remove('displayNone');
         buttonActivated.classList.add('displayNone');
     }
-
     return
 
 })
 
 document.getElementById('arrow').addEventListener('click', function(){
-    const tbody = document.getElementsByTagName('tbody');
-    tbody.addClass('rowReverse')
-    // console.log("file: pageContrat_1.js ~ line 35 ~ document.getElementById ~ tbody", tbody);
-    // new Array(tbody).reverse();
+    const tBodies = document.getElementsByTagName('tbody');
+    const newTbody = document.createElement('tbody');
+    const oldTbody = tBodies[0];
+    rows = oldTbody.rows,
+    i = rows.length - 1;
+
+    while (i >= 0) {
+        newTbody.appendChild(rows[i]);
+        i -= 1;
+    }
+    oldTbody.parentNode.replaceChild(newTbody, oldTbody);
 })
 
 

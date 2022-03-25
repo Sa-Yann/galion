@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./choisir_Lot.css">
+    <title>Choisir Lot</title>
+</head>
+<body>
+    <header>
+        <h1>Intégration Galion: Choisir Lot 1</h1>
+        <br>
+    </header>
+    <main>
+        <div class="menuTop">
+            <div class="logo_MenuTop_Cont">
+                <img class="galionIcon" src="./assets/logos/burger.svg" alt="galionIcon">
+                <img src="./assets/logos/Logo_bleu_maxi.svg" alt="galionLogo">
+            </div>
+            <div class="identifiants">
+                <img src="./assets/userIcon/Union.svg" alt="userIcon">
+                <h5>raison sociale</h5>
+            </div>
+        </div>
+        <div class="retour">
+            <a href="./pageContrat_1.html" class="ahref_noStyle_White flex_CtrCtr">
+                <img class="arrowRtrn" src="./assets/icons/fleche.svg" alt="fleche">
+                <h3>Retour</h3>
+            </a>
+        </div>
+        <div class="mainBaliseContainer flex_CtrCtr">
+            <section id="section_PopUp" class="body_pp displayNone_Pup">
+                <div>
+                    <form id="formContainer" class="formContainer" name="popUp_Form">
+                        <div id="title_Pup" class="title_Pup title_Pup_NoError">
+                            <div class="retourWithElements flex_CtrCtr">
+                                <a href="./pageContrat_1.html" class="ahref_noStyle_White flex_CtrCtr">
+                                    <img class="arrowRtrn__Pup" src="./assets/icons/fleche.png" alt="fleche">
+                                    <h3>Retour</h3>
+                                </a>
+                            </div>
+                            <h2>créer un nouveau lot</h2>
+                            <div id="crossContainer" class="crossContainer">
+                                <img id="crossClosed" class="crossClose" src="./assets/icons/cross_Grey.png" alt="croix">
+                            </div>
+                        </div>
+                        <div id="containerError" class="containerError errorCont_DisplayNone flex_AlignCtr">
+                            <div class="wrapperCont">
+                                <img src="./assets/icons/wrapper.svg" alt="attention Icone">
+                            </div>
+                            <div class="errorTextAndCross_Cont">
+                                <div class="errorText_ConT">
+                                    <h4>Attention, il y a une erreur dans l’un des champs ci-dessous !</h4>
+                                    <h5>Lorem ipsum dolor sit amet. Et sequi voluptatem eos perferendis odio ut molestiae autem.</h5>
+                                </div>
+                                <div class="Cross_errorCont">
+                                    <img src="./assets/icons/smallCross.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container_2">
+                            <div class="careful_Mention flex_CtrCtr">
+                                <h6>Ces champs ne sont pas obligatoires, cependant ils aident à la recherche rapide dans les
+                                    tableaux.</h6>
+                            </div>
+                            <div class="ligneDeChamp flex_CtrCtr">
+                                <div class="title_ligneDeChamp">
+                                    <h4>Numéro du lot/mandat</h4>
+                                </div>
+                                <div class="inputCont_ligneDeChamp">
+                                    <input id="numero_Lot" type="number" placeholder="Numéro du lot/mandat">
+                                </div>
+                            </div>
+                            <div class="ligneDeChamp flex_CtrCtr">
+                                <div class="title_ligneDeChamp">
+                                    <h4>Nom du propriétaire *</h4>
+                                </div>
+                                <div class="inputCont_ligneDeChamp">
+                                    <input id="nom" type="text" placeholder="Nom du propriétaire">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container_3">
+                            <div class="ligneDeChamp flex_CtrCtr">
+                                <div class="title_ligneDeChamp">
+                                    <h4>Adresse du lot *</h4>
+                                </div>
+                                <div class="inputCont_ligneDeChamp">
+                                    <input id="adresse" type="text" placeholder="Adresse du lot *">
+                                </div>
+                            </div>
+                            <div class="ligneDeChamp flex_CtrCtr">
+                                <div class="title_ligneDeChamp">
+                                    <h4>Complément d'adresse</h4>
+                                </div>
+                                <div class="inputCont_ligneDeChamp">
+                                    <input type="text" placeholder="Complément d'adresse">
+                                </div>
+                            </div>
+                            <div class="ligneDeChamp flex_CtrCtr">
+                                <div class="title_ligneDeChamp">
+                                    <h4>Code postal et ville *</h4>
+                                </div>
+                                <div id="containerDoubleInput_Yes_No" class="containerDoubleInput ">
+                                    <div id="field_CP" class="inputCont_ligneDeChamp_Half inputHalf_1">
+                                        <input id="postalCode" type="number" name="PostalCode" placeholder="Code Postal">
+                                    </div>
+                                    <div class="inputCont_ligneDeChamp_Half inputHalf_2">
+                                        <input id="town" type="text" name="Ville" placeholder="Ville">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ligneDeChampYes_No flex_CtrCtr">
+                                <div class="title_ligneDeChamp">
+                                    <h4>Meublé? *</h4>
+                                </div>
+                                <div class="containerDoubleInput ligneDeChamp">
+                                    <div class="yes_no_BtnCont flex_CtrCtr">
+                                        <input id="inputBtn_Yes" class="inputBtn inputBtnStyle_ON flex1" type="button" value="OUI">
+                                        <input id="inputBtn_No" class="inputBtn inputBtnStyle_OFF flex1" type="button" value="NON">
+                                    </div>
+                                </div>
+            
+                            </div>
+                            <div class="ligneDeChamp flex_CtrCtr">
+                                <div class="title_ligneDeChamp">
+                                    <h4>Type de bien? *</h4>
+                                </div>
+                                <div class="containerDoubleInput_Img ligneDeChamp">
+                                    <div class="img_BtnCont">
+                                        <button id="type_Appart" class="inputImg appartement_NotChecked  inputImgStyle_OFF flex1"
+                                            type="button" name="appartement" value="appartement" alt="appartement"></button>
+                                        <button id="type_Maison" class="inputImg maison_NotChecked inputImgStyle_OFF flex1"
+                                            type="button" name="maison" value="maison" alt="maison"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container_DoubleInput">
+                                <div class="ligneDeChamp flex_CtrCtr">
+                                    <div class="subCont_Left flex_CtrCtr">
+                                        <div class="title_ligneDeChamp">
+                                            <h4>Loyer (charges comprises) *</h4>
+                                        </div>
+                                        <div class="inputCont_ligneDeChamp_Small flex_CtrCtr">
+                                            <input id="loyer" type="number" class="inputSmall" placeholder="Loyer">
+                                            <div class="unit">
+                                                <h3>€</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="subCont_Right flex_CtrCtr">
+                                        <div class="title_ligneDeChamp">
+                                            <h4>Étage</h4>
+                                        </div>
+                                        <div class="inputCont_ligneDeChamp_Small flex_CtrCtr">
+                                            <input type="text" class="inputSmall" placeholder="1er">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ligneDeChamp flex_CtrCtr">
+                                    <div class="subCont_Left flex_CtrCtr">
+                                        <div class="title_ligneDeChamp">
+                                            <h4>Superficie *</h4>
+                                        </div>
+                                        <div class="inputCont_ligneDeChamp_Small flex_CtrCtr">
+                                            <input id="superficie" type="number" class="inputSmall" placeholder="Superficie">
+                                            <div class="unit">
+                                                <h3>m²</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="subCont_Right flex_CtrCtr">
+                                        <div class="title_ligneDeChamp">
+                                            <h4>Nombre de pièces *</h4>
+                                        </div>
+                                        <div class="inputCont_ligneDeChamp_Small flex_CtrCtr">
+                                            <input id="nbr_Pieces" type="number" class="inputSmall" placeholder="Nombre">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footerPopUp flex_CtrCtr">
+                            <button id="buttonNonActivated_Pup" class="create_NotActive">
+                                Créer
+                            </button>
+                            <button id="buttonActivated_Pup" class="create_Active displayNone" style="background-color: #006464">
+                                <h4>Créer</h4>
+                                <!-- <a class="ahref_noStyle_White" href="./choisir_Lot.html">
+                                    <h4>Créer</h4>
+                                </a> -->
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <script src="./creerNouveauLot_1.js"></script>
+            </section>
+            <div class="baliseContainer flex_CtrCtr">
+                <div class="balise1 relative_Pos">
+                    <div class="textInBalise absolute_Pos flex_CtrCtr">
+                        <h3>1. contrat</h3>
+                    </div>
+                    <img class="balise" src="./assets/icons/balise-start-light_green.svg" alt="balise_Start_Green">
+                </div>
+                <div class="balise2 relative_Pos">
+                    <div class="textInBalise absolute_Pos flex_CtrCtr">
+                        <h3>2.lot</h3>
+                    </div>
+                    <img class="balise" src="./assets/icons/balise_Middle_Green.svg" alt="balise_Start_Green">
+                </div>
+                <div class="balise3 relative_Pos">
+                    <div class="textInBalise absolute_Pos flex_CtrCtr">
+                        <h3>3. Personnes</h3>
+                    </div>
+                    <img class="balise" src="./assets/icons/balise_Middle.svg" alt="balise_Start_Green">
+                </div>
+                <div class="balise4 relative_Pos">
+                    <div class="textInBalise absolute_Pos flex_CtrCtr">
+                        <h3>4. documents</h3>
+                    </div>
+                    <img class="balise" src="./assets/icons/balise_Middle.svg" alt="balise_Start_Green">
+                </div>
+                <div class="balise5 relative_Pos">
+                    <div class="textInBalise absolute_Pos flex_CtrCtr">
+                        <h3>5. validation</h3>
+                    </div>
+                    <img class="balise" src="./assets/icons/balise_End.svg" alt="balise_Start_Green">
+                </div>
+            </div>
+        </div>
+        <div class="title_Search_Submit">
+            <div class="title flex_AlignCtr flex1">
+                <img class="titleIcon" src="./assets/icons/building.svg" alt="building">
+                <h2 class="titleText">Sélectionner ou créer un lot</h2>
+            </div>
+            <div class="searchCont flex_CtrCtr flex1">
+                <input type="search" class="searchInput" placeholder="ex: adresse du bien, nom proprietaire">
+                <img src="./assets/icons/searchIcon.svg" alt="" class="searchIcon">
+            </div>
+        
+            <div class="btn_container">
+                <button class="submit flex1 openPopUp">
+                    <h4>Créer un lot</h4>
+                    <!-- <a class="ahref_noStyle_White" href="./pagecontrat_1.html">
+                        <h4>Créer un lot</h4>
+                    </a> -->
+                </button>
+            </div>
+        </div>
+        <div class="frame4Container flex_CtrCtr">
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <div class="flex_CtrCtr">
+                                    <div class="flex_CtrCtr stateFolder">
+                                        <div id="arrowCol1" class="arrows arrowCol1">
+                                            <img id="arrowUp_col1" class="arrowUp arrowUp_col" src="./assets/icons/arrowUp.svg" alt="arrow up">
+                                            <!-- <img id="arrowDown_col1" class="arrowDown_col1" src="./assets/icons/arrowDownThead.svg" alt="arrow up"> -->
+                                        </div>
+                                        <h3>N° de lot</h3>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="flex_CtrCtr">
+                                    <div class="flex_CtrCtr stateFolder">
+                                        <div id="arrowCol2" class="arrows">
+                                            <img id="arrowUp_col2" class="arrowUp arrowUp_col" src="./assets/icons/arrowUp.svg" alt="arrow up">
+                                            <!-- <img id="arrowDown_col1" class="arrowDown_col1" src="./assets/icons/arrowDownThead.svg" alt="arrow up"> -->
+                                        </div>
+                                        <h3>Nom</h3>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <h3>Adresse du bien</h3>
+                            </th>
+                            <th scope="col homeTypesTh">
+                                <h3>Type de bien</h3>
+                            </th>
+                            <th scope="col">
+                                <h3>loyer(€)</h3>
+                            </th>
+                            <th scope="col">
+                                <div class="compositionTh">
+                                    <h3>Composition</h3>
+                                </div>
+                                
+                            </th>
+                            <th scope="col">
+                                <!-- <h3>Icon</h3> -->
+                            </th>
+                            <th scope="col">
+                                <!-- <h3>Icon</h3> -->
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <tr id="line1">
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="flex_CtrCtr">1</h3>
+                                </div>
+                            </th>
+                            <td class="name">
+                                <h3>Dupont</h3>
+                            </td>
+                            <td class="address">
+                                <div>
+                                    <h3>26 rue des champs, 75010, Paris</h3>
+                                </div>
+                            </td>
+                            <td class="homeTypesTb">
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/buidingIcon.svg" alt="buildingIcon">
+                                </div>
+                                
+                            </td>
+                            <td class="rent_Cost">
+                                <h3>1500</h3>
+                            </td>
+                            <td class="compositionTb">
+                                <div>
+                                    <h3>Nombre de pièces : 3<br>Surface : 58 m²</h3>
+                                </div>
+                            </td>
+                            <td  class="flex_CtrCtr">
+                                <button id="buttonChoose" class="choose flex_CtrCtr">
+                                    Choisir ce lot
+                                    <!-- <div class="checkedbutton">
+                                        <img src="./assets/icons/check_Grey.svg" alt="">
+                                    </div> -->
+                                </button>
+                            </td>
+                            
+                            <td><img class="pencil openPopUp" src="./assets/icons/pencil.svg" alt="pencil"></td>
+                        </tr>
+                        <tr id="line2">
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="flex_CtrCtr">1</h3>
+                                </div>
+                            </th>
+                            <td class="name">
+                                <h3>Dupont</h3>
+                            </td>
+                            <td class="address">
+                                <div>
+                                    <h3>26 rue des champs, 75010, Paris</h3>
+                                </div>
+                            </td>
+                            <td class="homeTypesTb">
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/buidingIcon.svg" alt="buildingIcon">
+                                </div>
+                        
+                            </td>
+                            <td class="rent_Cost">
+                                <h3>800</h3>
+                            </td>
+                            <td class="compositionTb">
+                                <div>
+                                    <h3>Nombre de pièces : 3<br>Surface : 58 m²</h3>
+                                </div>
+                            </td>
+                            <td class="flex_CtrCtr">
+                                <button  class="choose flex_CtrCtr">
+                                    Choisir ce lot
+                                    <div class="checkedbutton">
+                                        <img src="./assets/icons/check_Grey.svg" alt="">
+                                    </div>
+                                </button>
+                            </td>
+                        
+                            <td><img class="pencil openPopUp" src="./assets/icons/pencil.svg" alt="pencil"></td>
+                        </tr>
+                        <tr id="line3">
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="flex_CtrCtr">1</h3>
+                                </div>
+                            </th>
+                            <td class="name">
+                                <h3>Dupont</h3>
+                            </td>
+                            <td class="address">
+                                <div>
+                                    <h3>26 rue des champs, 75010, Paris</h3>
+                                </div>
+                            </td>
+                            <td class="homeTypesTb">
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/houseIcon.svg" alt="buildingIcon">
+                                </div>
+                        
+                            </td>
+                            <td class="rent_Cost">
+                                <h3>1000</h3>
+                            </td>
+                            <td class="compositionTb">
+                                <div>
+                                    <h3>Nombre de pièces : 3<br>Surface : 58 m²</h3>
+                                </div>
+                            </td>
+                            <td class="flex_CtrCtr">
+                                <button  class="choose flex_CtrCtr">
+                                    Choisir ce lot
+                                    <div class="checkedbutton">
+                                        <img src="./assets/icons/check_Grey.svg" alt="">
+                                    </div>
+                                </button>
+                            </td>
+                        
+                            <td><img class="pencil openPopUp" src="./assets/icons/pencil.svg" alt="pencil"></td>
+                        </tr>
+                        <tr id="line4">
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="flex_CtrCtr">1</h3>
+                                </div>
+                            </th>
+                            <td class="name">
+                                <h3>Dupont</h3>
+                            </td>
+                            <td class="address">
+                                <div>
+                                    <h3>26 rue des champs, 75010, Paris</h3>
+                                </div>
+                            </td>
+                            <td class="homeTypesTb">
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/houseIcon.svg" alt="buildingIcon">
+                                </div>
+                        
+                            </td>
+                            <td class="rent_Cost">
+                                <h3>1700</h3>
+                            </td>
+                            <td class="compositionTb">
+                                <div>
+                                    <h3>Nombre de pièces : 3<br>Surface : 58 m²</h3>
+                                </div>
+                            </td>
+                            <td class="flex_CtrCtr">
+                                <button class="choose flex_CtrCtr">
+                                    Choisir ce lot
+                                    <div class="checkedbutton">
+                                        <img src="./assets/icons/check_Grey.svg" alt="">
+                                    </div>
+                                </button>
+                            </td>
+                        
+                            <td><img class="pencil openPopUp" src="./assets/icons/pencil.svg" alt="pencil"></td>
+                        </tr>
+                        <tr id="line5">
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="flex_CtrCtr">1</h3>
+                                </div>
+                            </th>
+                            <td class="name">
+                                <h3>Dupont</h3>
+                            </td>
+                            <td class="address">
+                                <div>
+                                    <h3>26 rue des champs, 75010, Paris</h3>
+                                </div>
+                            </td>
+                            <td class="homeTypesTb">
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/buidingIcon.svg" alt="buildingIcon">
+                                </div>
+                            </td>
+                            <td class="rent_Cost">
+                                <h3>1200</h3>
+                            </td>
+                            <td class="compositionTb">
+                                <div>
+                                    <h3>Nombre de pièces : 3<br>Surface : 58 m²</h3>
+                                </div>
+                            </td>
+                            <td class="flex_CtrCtr">
+                                <button  class="choose flex_CtrCtr">
+                                    Choisir ce lot
+                                    <div class="checkedbutton">
+                                        <img src="./assets/icons/check_Grey.svg" alt="">
+                                    </div>
+                                </button>
+                            </td>
+                            
+                            <td><img class="pencil openPopUp" src="./assets/icons/pencil.svg" alt="pencil"></td>
+                        </tr>
+                        <tr id="line6">
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="flex_CtrCtr">1</h3>
+                                </div>
+                            </th>
+                            <td class="name">
+                                <h3>Dupont</h3>
+                            </td>
+                            <td class="address">
+                                <div>
+                                    <h3>26 rue des champs, 75010, Paris</h3>
+                                </div>
+                            </td>
+                            <td class="homeTypesTb">
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/buidingIcon.svg" alt="buildingIcon">
+                                </div>
+                            </td>
+                            <td class="rent_Cost">
+                                <h3>1200</h3>
+                            </td>
+                            <td class="compositionTb">
+                                <div>
+                                    <h3>Nombre de pièces : 3<br>Surface : 58 m²</h3>
+                                </div>
+                            </td>
+                            <td class="flex_CtrCtr">
+                                <button class="choose flex_CtrCtr">
+                                    Choisir ce lot
+                                    <div class="checkedbutton">
+                                        <img src="./assets/icons/check_Grey.svg" alt="">
+                                    </div>
+                                </button>
+                            </td>
+                        
+                            <td><img class="pencil openPopUp" src="./assets/icons/pencil.svg" alt="pencil"></td>
+                        </tr>
+                        <tr id="line7">
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="flex_CtrCtr">1</h3>
+                                </div>
+                            </th>
+                            <td class="name">
+                                <h3>Dupont</h3>
+                            </td>
+                            <td class="address">
+                                <div>
+                                    <h3>26 rue des champs, 75010, Paris</h3>
+                                </div>
+                            </td>
+                            <td class="homeTypesTb">
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/houseIcon.svg" alt="buildingIcon">
+                                </div>
+                            </td>
+                            <td class="rent_Cost">
+                                <h3>1200</h3>
+                            </td>
+                            <td class="compositionTb">
+                                <div>
+                                    <h3>Nombre de pièces : 3<br>Surface : 58 m²</h3>
+                                </div>
+                            </td>
+                            <td class="flex_CtrCtr">
+                                <button class="choose flex_CtrCtr">
+                                    Choisir ce lot
+                                    <div class="checkedbutton">
+                                        <img src="./assets/icons/check_Grey.svg" alt="">
+                                    </div>
+                                </button>
+                            </td>
+                            <td><img class="pencil openPopUp" src="./assets/icons/pencil.svg" alt="pencil"></td>
+                        </tr>
+                        <tr id="line8">
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="flex_CtrCtr">1</h3>
+                                </div>
+                            </th>
+                            <td class="name">
+                                <h3>Dupont</h3>
+                            </td>
+                            <td class="address">
+                                <div>
+                                    <h3>26 rue des champs, 75010, Paris</h3>
+                                </div>
+                            </td>
+                            <td class="homeTypesTb">
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/buidingIcon.svg" alt="buildingIcon">
+                                </div>
+                            </td>
+                            <td class="rent_Cost">
+                                <h3>1200</h3>
+                            </td>
+                            <td class="compositionTb">
+                                <div>
+                                    <h3>Nombre de pièces : 3<br>Surface : 58 m²</h3>
+                                </div>
+                            </td>
+                            <td class="flex_CtrCtr">
+                                <button class="choose flex_CtrCtr">
+                                    Choisir ce lot
+                                    <div class="checkedbutton">
+                                        <img src="./assets/icons/check_Grey.svg" alt="">
+                                    </div>
+                                </button>
+                            </td>
+                            <td><img class="pencil openPopUp" src="./assets/icons/pencil.svg" alt="pencil"></td>
+                        </tr>
+                        <tr id="line9">
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="flex_CtrCtr">1</h3>
+                                </div>
+                            </th>
+                            <td class="name">
+                                <h3>Dupont</h3>
+                            </td>
+                            <td class="address">
+                                <div>
+                                    <h3>26 rue des champs, 75010, Paris</h3>
+                                </div>
+                            </td>
+                            <td class="homeTypesTb">
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/houseIcon.svg" alt="buildingIcon">
+                                </div>
+                            </td>
+                            <td class="rent_Cost">
+                                <h3>1200</h3>
+                            </td>
+                            <td class="compositionTb">
+                                <div>
+                                    <h3>Nombre de pièces : 3<br>Surface : 58 m²</h3>
+                                </div>
+                            </td>
+                            <td class="flex_CtrCtr">
+                                <button class="choose flex_CtrCtr">
+                                    Choisir ce lot
+                                    <div class="checkedbutton">
+                                        <img src="./assets/icons/check_Grey.svg" alt="">
+                                    </div>
+                                </button>
+                            </td>
+                            <td><img class="pencil openPopUp" src="./assets/icons/pencil.svg" alt="pencil"></td>
+                        </tr>
+                        <tr id="line10">
+                            <th scope="row">
+                                <div class="flex_CtrCtr">
+                                    <h3 class="flex_CtrCtr">1</h3>
+                                </div>
+                            </th>
+                            <td class="name">
+                                <h3>Dupont</h3>
+                            </td>
+                            <td class="address">
+                                <div>
+                                    <h3>26 rue des champs, 75010, Paris</h3>
+                                </div>
+                            </td>
+                            <td class="homeTypesTb">
+                                <div class="flex_CtrCtr">
+                                    <img src="./assets/icons/buidingIcon.svg" alt="buildingIcon">
+                                </div>
+                        
+                            </td>
+                            <td class="rent_Cost">
+                                <h3>1200</h3>
+                            </td>
+                            <td class="compositionTb">
+                                <div>
+                                    <h3>Nombre de pièces : 3<br>Surface : 58 m²</h3>
+                                </div>
+                            </td>
+                            <td class="flex_CtrCtr">
+                                <button class="choose flex_CtrCtr">
+                                    Choisir ce lot
+                                    <div class="checkedbutton">
+                                        <img src="./assets/icons/check_Grey.svg" alt="">
+                                    </div>
+                                </button>
+                            </td>
+                            <td><img class="pencil openPopUp" src="./assets/icons/pencil.svg" alt="pencil"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="flex_CtrCtr">
+                        <tr class="flex_CtrCtr">
+                            <!-- <th scope="row" colspan="1" class="flex_CtrCtr">footer</th> -->
+                            <td scope="row" colspan="8">
+                                <div class="footer_Container flex_CtrCtr">
+                                    <div class="leftSide_PageInfo flex_CtrCtr">
+                                        <h5>Afficher</h5>
+                                        <div class="amountOfResults_arrowDown flex_CtrCtr">
+                                            <!-- <div class="amountOfResults">10</div>
+                                            <img class="arrowDown" src="./assets/icons/arrowDown.svg" alt=""> -->
+                                            <label for="amountOfResults"></label>
+                                            <input type="number" id="amountOfResults" name="tableResult_Amount" min="1" max="10" placeholder="10">
+                                            <div class="arrowDownNb_Input flex_CtrCtr">
+                                                <img src="./assets/icons/arrowDown.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <h5>résultats par page</h5>
+                                    </div>
+                                    <div class="rightSide_PageInfo flex_CtrCtr">
+                                        <div class="numbers">
+                                            <nav aria-label="pagination" class="flex_CtrCtr">
+                                                <ul class="pagination flex_CtrCtr">
+                                                    <li><a href=""><span aria-hidden="true"><img src="./assets/icons/chevronLeft.svg"
+                                                                    alt="chevronLeft" class="chevronLeft"></span><span
+                                                                class="visuallyhidden">previous set of pages</span></a>
+                                                    </li>
+                                                    <li class="li_pagination_Active"><a href=""><span class="visuallyhidden">page
+                                                            </span>1</a></li>
+                                                    <li class="li_pagination_Non_Active"><a href="" aria-current="page"><span
+                                                                class="visuallyhidden">page </span>2</a></li>
+                                                    <li class="li_pagination_Non_Active"><a href=""><span class="visuallyhidden">page
+                                                            </span>...</a></li>
+                                                    <li class="li_pagination_Non_Active"><a href=""><span class="visuallyhidden">page
+                                                            </span>9</a></li>
+                                                    <li><a href=""><span class="visuallyhidden">next set of pages</span><span
+                                                                aria-hidden="true"><img src="./assets/icons/chevronRight.svg"
+                                                                    alt="chevronRight" class="chevronRight"></span></a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer class="flex_CtrCtr">
+        <div class="footerButtons flex_CtrCtr">
+            <button class="return">
+                <a class="ahref_noStyle_White" href="./pageContrat_1.html">
+                    <h4>Retour</h4>
+                </a>
+            </button>
+            <!-- <button class="next ">
+                <a class="ahref_noStyle_White" href="./choisir_Lot.html">
+                    <h4>Suivant</h4>
+                </a>
+            </button> -->
+            <button id="buttonNonActivated" class="nextNotActive">
+                Suivant
+            </button>
+            <!-- <button class="next">
+                <a class="ahref_noStyle_White" href="./choisir_Lot.html">
+                    <h4>Suivant</h4>
+                </a>
+            </button> -->
+            <button id="buttonActivated" class="next_Active displayNone">
+                <a class="ahref_noStyle_White" href="./personneScreen.html">
+                    <h4>Suivant</h4>
+                </a>
+            </button>
+        </div>
+    </footer>
+    <script src="choisir_Lot.js"></script>
+    <!-- <script>
+        function getRowIndex(x) {
+            console.log(x.rowIndex)
+            const rowIndex = x.rowIndex
+        }
+    </script> -->
+</body>
+</html>
